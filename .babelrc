@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "browsers": ["last 2 chrome versions"] },
+        "useBuiltIns": "usage",
+        "corejs": { "version": 3, "proposals": true }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-transform-runtime"]
+}
