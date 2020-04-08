@@ -2,6 +2,7 @@ import React, { useState, Fragment } from "react";
 
 import { ExampleOne } from "./ExampleOne";
 import { ExampleTwo } from "./ExampleTwo";
+import { ExampleThree } from "./ExampleThree";
 
 export const App = () => {
   const [currentExample, setCurrentExample] = useState(1);
@@ -48,6 +49,8 @@ const getExample = (num) => {
       return <ExampleOne />;
     case 2:
       return <ExampleTwo />;
+    case 3:
+      return <ExampleThree />;
     default:
       return null;
   }
