@@ -11,7 +11,6 @@ export const ExampleTwo = () => {
         // If you don't set this then the window is the root
         root: rootRef.current,
         rootMargin: "0px",
-        threshold: [0, 1],
       };
 
       const observer = new IntersectionObserver((entries) => {
